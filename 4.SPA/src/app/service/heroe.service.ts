@@ -60,4 +60,9 @@ export class HeroesService {
   public getHeroes() {
     return this.heroes;
   }
+
+  public getHeroe(id:string) {
+    return this.heroes[id];
+  }
+
 }
