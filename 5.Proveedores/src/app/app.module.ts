@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { MaterialModule } from './material/material.module';
-
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 /** Routing */
 import { AppRoutingModule } from './app-routing.module';
 /** Components */
@@ -23,6 +23,7 @@ import { FormularioComponent } from './components/proveedores/formulario/formula
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     AppRoutingModule,
     MaterialModule
   ],
