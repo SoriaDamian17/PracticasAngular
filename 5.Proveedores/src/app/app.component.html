@@ -1,16 +1,5 @@
+<app-menutab></app-menutab>
 <div>
-  <mat-toolbar color="primary">
-    <span>App</span>
-    <button class="float-right" mat-icon-button [mat-menu-trigger-for]="matMenu">
-      <mat-icon>more_vert</mat-icon>
-    </button>
-  </mat-toolbar>
-  <mat-menu x-position="before" #matMenu>
-    <button mat-menu-item [routerLink]="['Presupuestos']">Presupuestos</button>
-    <button mat-menu-item [routerLink]="['Contratos']">Contratos</button>
-  </mat-menu>
+    <router-outlet></router-outlet>
 </div>
-<mat-card>
-  <router-outlet></router-outlet>
-</mat-card>
-
+<app-footer></app-footer>

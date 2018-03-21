@@ -15,6 +15,12 @@ mat-toolbar-row {
   justify-content: space-between;
 }
 
+.demo-tab-group {
+  position: fixed;
+  bottom:0;
+  left:0;
+}
+
 .done {
   position: fixed;
   bottom: 20px;

@@ -1,0 +1,12 @@
+<div>
+  <mat-toolbar color="primary">
+    <span>App</span>
+    <button class="float-right" mat-icon-button [mat-menu-trigger-for]="matMenu">
+      <mat-icon>more_vert</mat-icon>
+    </button>
+  </mat-toolbar>
+  <mat-menu x-position="before" #matMenu>
+    <button mat-menu-item [routerLink]="['Proveedores']">Proveedores</button>
+    <button mat-menu-item [routerLink]="['Contratos']">Contratos</button>
+  </mat-menu>
+</div>

@@ -11,11 +11,11 @@ const routes: Routes = [
     component: LoginComponent
   },
   {
-    path:'Presupuestos',
+    path:'Proveedores',
     component: ListadoComponent
   },
   {
-    path:'Presupuesto/Alta',
+    path:'Proveedores/Alta',
     component: FormularioComponent
   },
   {
