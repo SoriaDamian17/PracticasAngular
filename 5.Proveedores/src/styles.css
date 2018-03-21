@@ -21,3 +21,15 @@ mat-toolbar-row {
   right: 20px;
   color: white;
 }
+
+.relative {
+  position: relative;
+}
+
+.float-left {
+  float:left;
+}
+
+.float-right {
+  float:left;
+}

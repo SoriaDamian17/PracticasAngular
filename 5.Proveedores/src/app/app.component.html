@@ -1,21 +1,16 @@
 <div>
   <mat-toolbar color="primary">
-    <span><mat-icon>receipt</mat-icon></span>
-
-    <span>Presupuestos</span>
-
-    <button class="float-left" mat-icon-button [mat-menu-trigger-for]="matMenu">
+    <span>App</span>
+    <button class="float-right" mat-icon-button [mat-menu-trigger-for]="matMenu">
       <mat-icon>more_vert</mat-icon>
     </button>
   </mat-toolbar>
   <mat-menu x-position="before" #matMenu>
-    <button mat-menu-item>Presupuesto</button>
-    <button mat-menu-item>Contratos</button>
+    <button mat-menu-item [routerLink]="['Presupuestos']">Presupuestos</button>
+    <button mat-menu-item [routerLink]="['Contratos']">Contratos</button>
   </mat-menu>
-
-  <mat-card>
-    <h1>Bienvenidos a nuestra aplicaciòn ComprasApp</h1>
-  </mat-card>
 </div>
+<mat-card>
+  <router-outlet></router-outlet>
+</mat-card>
 
-<router-outlet></router-outlet>
