@@ -1,11 +1,16 @@
-<ul>
-    <div *ngFor="let course of listObservable | async">
-        
-            <h3><a href="#">{{course.title}}</a> </h3>
-            <p>{{course.description}}</p>
-            <div>
-                <a href="{{course.url}}" target="_blank" class="btn btn-danger">Go To Course</a>
-            </div>
-        
-    </div>
-</ul>
+<mat-card *ngFor="let course of listObservable | async">
+  <mat-card-header>
+    <div mat-card-avatar>avatar</div>
+    <mat-card-title>{{course.title}}</mat-card-title>
+  </mat-card-header>
+  <mat-card-content>
+      {{course.description}}
+  </mat-card-content>
+  <mat-card-actions>
+    <a href="{{course.url}}" target="_blank" class="btn btn-danger">Go To Course</a>
+  </mat-card-actions>
+</mat-card>
+
+<button mat-fab color="primary">
+    <mat-icon aria-label="Example icon-button with a plus icon">favorite</mat-icon>
+</button>
