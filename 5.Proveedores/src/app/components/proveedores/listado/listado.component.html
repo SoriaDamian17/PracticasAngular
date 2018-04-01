@@ -1,3 +1,22 @@
+<<<<<<< HEAD
 <p>
   listado works!
 </p>
+=======
+<mat-card *ngFor="let course of listObservable | async">
+  <mat-card-header>
+    <div mat-card-avatar>avatar</div>
+    <mat-card-title>{{course.title}}</mat-card-title>
+  </mat-card-header>
+  <mat-card-content>
+      {{course.description}}
+  </mat-card-content>
+  <mat-card-actions>
+    <a href="{{course.url}}" target="_blank" class="btn btn-danger">Go To Course</a>
+  </mat-card-actions>
+</mat-card>
+
+<button mat-fab color="primary">
+    <mat-icon aria-label="Example icon-button with a plus icon">favorite</mat-icon>
+</button>
+>>>>>>> aa4285b7a562e7be85a9eb732fea01ee89a9424f

@@ -1,7 +1,11 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
   "project": {
+<<<<<<< HEAD
     "name": "provedores"
+=======
+    "name": "prov"
+>>>>>>> aa4285b7a562e7be85a9eb732fea01ee89a9424f
   },
   "apps": [
     {
@@ -55,7 +59,11 @@
   },
   "defaults": {
     "styleExt": "css",
+<<<<<<< HEAD
     "component": {},
     "poll":"3000"
+=======
+    "component": {}
+>>>>>>> aa4285b7a562e7be85a9eb732fea01ee89a9424f
   }
 }

@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 # Provedores
+=======
+# Prov
+>>>>>>> aa4285b7a562e7be85a9eb732fea01ee89a9424f
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.7.3.
 
