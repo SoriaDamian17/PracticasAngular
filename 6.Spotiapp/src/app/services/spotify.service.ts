@@ -5,7 +5,7 @@ import 'rxjs/add/operator/map';
 @Injectable()
 export class SpotifyService {
 
-  artist: any[] = [];
+  artistas: any[] = [];
 
   constructor(public http: HttpClient) {
     console.log('Initiacos servicio spotify.');
@@ -20,7 +20,8 @@ export class SpotifyService {
 
     return this.http.get(URL, { headers: headers })
                     .map((resp: any) => {
-                      return resp.artists.items;
+                      this.artistas = resp.artists.items;
+                      return this.artistas;
                     });
   }
 
